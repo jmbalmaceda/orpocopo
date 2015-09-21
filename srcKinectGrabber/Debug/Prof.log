@@ -1,0 +1,38 @@
+﻿Compilación iniciada a las 28/07/2015 11:50:52 a.m..
+     1>Proyecto "C:\Proyecto ORCO\srcKinectGrabber\Prof.vcxproj" en el nodo 3 (Build destinos).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(346,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Proyecto ORCO\boost_1_58_0" /I"C:\Program Files (x86)\MySQL\mysql-5.6.25-win32\include" /ZI /nologo /W3 /WX- /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D WIN32 /D _DEBUG /D _CONSOLE /D CPPCONN_PUBLIC_FUNC= /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt DBConnection.cpp main.cpp
+         main.cpp
+     1>c:\proyecto orco\srckinectgrabber\main.cpp(574): warning C4190: 'definirNuevoArchivoDeVideo' tiene una vinculación C especificada, pero devuelve el tipo definido por el usuario 'std::basic_string<_Elem,_Traits,_Alloc>' que es incompatible con C
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Alloc=std::allocator<char>
+                 ]
+         DBConnection.cpp
+         Generando código...
+     1>c:\proyecto orco\srckinectgrabber\dbconnection.cpp(102): warning C4715: 'DBConnection::insertPickUpInformation' : no todas las rutas de acceso de control devuelven un valor
+     1>c:\proyecto orco\srckinectgrabber\dbconnection.cpp(123): warning C4715: 'DBConnection::insertPickUpInformation' : no todas las rutas de acceso de control devuelven un valor
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\app\debug\BlobsDetection.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Proyecto ORCO\boost_1_58_0" /LIBPATH:"C:\Program Files (x86)\MySQL\mysql-5.6.25-win32\lib" /LIBPATH:"C:\Proyecto ORCO\opencv246\build\x86\vc11\lib" opencv_core246d.lib opencv_highgui246d.lib opencv_video246d.lib opencv_ml246d.lib opencv_legacy246d.lib opencv_imgproc246d.lib "C:\Program Files\Microsoft SDKs\Kinect\v1.8\lib\x86\Kinect10.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"..\app\debug\BlobsDetection.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\app\debug\BlobsDetection.lib" /MACHINE:X86 Debug\BlobsDetection.res
+         Debug\DBConnection.obj
+         Debug\dllmain.obj
+         Debug\Export.obj
+         Debug\iblobs.obj
+         Debug\IniReader.obj
+         Debug\IniWriter.obj
+         Debug\main.obj
+         Debug\pickDetection.obj
+         Debug\RoI_Information.obj
+         Debug\shopDetector.obj
+         Debug\stdafx.obj
+         "..\..\Program Files (x86)\MySQL\mysql-5.6.25-win32\lib\libmysql.lib"
+         "..\..\Program Files (x86)\MySQL\mysql-5.6.25-win32\lib\libmysqld.lib"
+         Prof.vcxproj -> C:\Proyecto ORCO\srcKinectGrabber\..\app\debug\BlobsDetection.exe
+     1>Compilación del proyecto terminada "C:\Proyecto ORCO\srcKinectGrabber\Prof.vcxproj" (Build destinos).
+
+Compilación correcta.
+
+Tiempo transcurrido 00:00:08.16

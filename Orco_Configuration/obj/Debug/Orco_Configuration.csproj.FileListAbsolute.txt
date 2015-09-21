@@ -1,0 +1,9 @@
+C:\Proyecto ORCO\Orco_Configuration\bin\Debug\Orco_Configuration.exe.config
+C:\Proyecto ORCO\Orco_Configuration\bin\Debug\Orco_Configuration.exe
+C:\Proyecto ORCO\Orco_Configuration\bin\Debug\Orco_Configuration.pdb
+C:\Proyecto ORCO\Orco_Configuration\obj\Debug\Orco_Configuration.Form1.resources
+C:\Proyecto ORCO\Orco_Configuration\obj\Debug\Orco_Configuration.Properties.Resources.resources
+C:\Proyecto ORCO\Orco_Configuration\obj\Debug\Orco_Configuration.csproj.GenerateResource.Cache
+C:\Proyecto ORCO\Orco_Configuration\obj\Debug\Orco_Configuration.exe
+C:\Proyecto ORCO\Orco_Configuration\obj\Debug\Orco_Configuration.pdb
+C:\Proyecto ORCO\Orco_Configuration\obj\Debug\Orco_Configuration.csprojResolveAssemblyReference.cache

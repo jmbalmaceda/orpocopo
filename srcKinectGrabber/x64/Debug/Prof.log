@@ -1,0 +1,23 @@
+﻿Compilación iniciada a las 08/05/2015 03:26:15 p.m..
+     1>Proyecto "C:\Proyecto ORCO\srcKinectGrabber\Prof.vcxproj" en el nodo 2 (Build destinos).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(346,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Proyecto ORCO\Wizard_Demo\bin\Debug\BlobsDetection.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Proyecto ORCO\opencv246\build\x64\vc11\lib" opencv_core246d.lib opencv_highgui246d.lib opencv_video246d.lib opencv_imgproc246d.lib opencv_videostab246d.lib "C:\Program Files\Microsoft SDKs\Kinect\v1.8\lib\amd64\Kinect10.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Proyecto ORCO\Wizard_Demo\bin\Debug\BlobsDetection.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Proyecto ORCO\Wizard_Demo\bin\Debug\BlobsDetection.lib" /MACHINE:X64 /DLL x64\Debug\dllmain.obj
+         x64\Debug\Export.obj
+         x64\Debug\iblobs.obj
+         x64\Debug\IniReader.obj
+         x64\Debug\IniWriter.obj
+         x64\Debug\main.obj
+         x64\Debug\pickDetection.obj
+         x64\Debug\PropertyFile.obj
+         x64\Debug\RoI_Information.obj
+         x64\Debug\shopDetector.obj
+         x64\Debug\stdafx.obj
+         LINK : no se encontró C:\Proyecto ORCO\Wizard_Demo\bin\Debug\BlobsDetection.dll o no lo generó el último vínculo incremental; ejecutando vínculo completo
+            Creando biblioteca C:\Proyecto ORCO\Wizard_Demo\bin\Debug\BlobsDetection.lib y objeto C:\Proyecto ORCO\Wizard_Demo\bin\Debug\BlobsDetection.exp
+         Prof.vcxproj -> C:\Proyecto ORCO\Wizard_Demo\bin\Debug\BlobsDetection.dll
+     1>Compilación del proyecto terminada "C:\Proyecto ORCO\srcKinectGrabber\Prof.vcxproj" (Build destinos).
+
+Compilación correcta.
+
+Tiempo transcurrido 00:00:00.79

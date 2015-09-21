@@ -1,0 +1,1 @@
+BlobsDetection.exe -C"C:\Proyecto ORCO\app\Settings.ini" -D"C:\Proyecto ORCO\app\DB.ini" -SImagen.jpg 
