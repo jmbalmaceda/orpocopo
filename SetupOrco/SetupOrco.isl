@@ -351,8 +351,6 @@
 		<row><td>Orco_Configuration.Archivos_de_c_digo_fuente</td><td>{4518317B-7BC0-409A-8FD0-7EE2159226F7}</td><td>INSTALLDIR</td><td>2</td><td/><td>orco_configuration.archivos_1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>Orco_Configuration.Resultado_principal</td><td>{E169CDA2-FDD0-473D-8700-DA5E715B4107}</td><td>INSTALLDIR</td><td>2</td><td/><td>orco_configuration.resultado</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>Orco_Configuration.S_mbolos_de_depuraci_n</td><td>{4E51A4E0-3557-4673-9B93-A705FC7EB505}</td><td>INSTALLDIR</td><td>2</td><td/><td>orco_configuration.s_mbolos_</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>Wizard_Demo.Archivos_de_c_digo_fuente</td><td>{A806AA5C-3D55-4DCD-96ED-223AC879CBFB}</td><td>INSTALLDIR</td><td>2</td><td/><td>wizard_demo.archivos_de_c_di</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>Wizard_Demo.Archivos_de_contenido</td><td>{A66FA03F-133A-4253-9C65-94DAEC974683}</td><td>INSTALLDIR</td><td>2</td><td/><td>wizard_demo.archivos_de_cont</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>libmysql.dll</td><td>{746B8692-9030-4940-B6A5-D6B643BAF941}</td><td>INSTALLDIR</td><td>2</td><td/><td>libmysql.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>opencv_core246.dll</td><td>{A509E903-2896-4B73-9221-2AA12F1BA383}</td><td>INSTALLDIR</td><td>2</td><td/><td>opencv_core246.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>opencv_ffmpeg246.dll</td><td>{3FCE2807-FA26-48B6-9CE3-56F86B9E5499}</td><td>INSTALLDIR</td><td>2</td><td/><td>opencv_ffmpeg246.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
@@ -1886,8 +1884,6 @@
 		<row><td>AlwaysInstall</td><td>Orco_Configuration.Archivos_de_c_digo_fuente</td></row>
 		<row><td>AlwaysInstall</td><td>Orco_Configuration.Resultado_principal</td></row>
 		<row><td>AlwaysInstall</td><td>Orco_Configuration.S_mbolos_de_depuraci_n</td></row>
-		<row><td>AlwaysInstall</td><td>Wizard_Demo.Archivos_de_c_digo_fuente</td></row>
-		<row><td>AlwaysInstall</td><td>Wizard_Demo.Archivos_de_contenido</td></row>
 		<row><td>AlwaysInstall</td><td>libmysql.dll</td></row>
 		<row><td>AlwaysInstall</td><td>opencv_core246.dll</td></row>
 		<row><td>AlwaysInstall</td><td>opencv_ffmpeg246.dll</td></row>
@@ -1924,8 +1920,6 @@
 		<row><td>orco_configuration.resultado</td><td>Orco_Configuration.Resultado_principal</td><td>Orco_Configuration.Resultado principal</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;Orco_Configuration&gt;|Built</td><td>3</td><td/></row>
 		<row><td>orco_configuration.s_mbolos_</td><td>Orco_Configuration.S_mbolos_de_depuraci_n</td><td>Orco_Configuration.Símbolos de depuración</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;Orco_Configuration&gt;|Symbols</td><td>3</td><td/></row>
 		<row><td>settings.ini</td><td>ISX_DEFAULTCOMPONENT</td><td>Settings.ini</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Proyecto ORCO\app\Settings.ini</td><td>1</td><td/></row>
-		<row><td>wizard_demo.archivos_de_c_di</td><td>Wizard_Demo.Archivos_de_c_digo_fuente</td><td>Wizard_Demo.Archivos de código fuente</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;Wizard_Demo&gt;|SourceFiles</td><td>3</td><td/></row>
-		<row><td>wizard_demo.archivos_de_cont</td><td>Wizard_Demo.Archivos_de_contenido</td><td>Wizard_Demo.Archivos de contenido</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;Wizard_Demo&gt;|ContentFiles</td><td>3</td><td/></row>
 	</table>
 
 	<table name="FileSFPCatalog">
@@ -2076,8 +2070,6 @@
 		<row><td>Orco_Configuration.Archivos_de_c_digo_fuente</td><td/><td/><td>_D36A99B0_EF70_42E1_9631_7B666805F14A_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>Orco_Configuration.Resultado_principal</td><td/><td/><td>_A498D3E7_6A12_417E_AAF6_A24E750B535B_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>Orco_Configuration.S_mbolos_de_depuraci_n</td><td/><td/><td>_B653EDCC_AB14_457B_BA65_0639B59732D7_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>Wizard_Demo.Archivos_de_c_digo_fuente</td><td/><td/><td>_2A2C949B_7B52_45B5_86BB_DDF692E8A5EA_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>Wizard_Demo.Archivos_de_contenido</td><td/><td/><td>_6B2839D9_06D4_48CA_B863_C57D87060550_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>libmysql.dll</td><td/><td/><td>_8600BB9E_B376_42BA_8FBE_314EA6DDDC82_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>opencv_core246.dll</td><td/><td/><td>_69F47669_3A3A_4A86_AC12_A90D29343115_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>opencv_ffmpeg246.dll</td><td/><td/><td>_655A4E33_188F_438D_B79C_894BF7BEC217_FILTER</td><td/><td/><td/><td/></row>
@@ -4059,7 +4051,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{0A76C990-1395-499B-A0E3-F272404EF6C2}</td></row>
 		<row><td>ISUSSignature</td><td>{4F1CF40F-21E5-4B6E-9CB2-A0E3E8E44C0D}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant,viewISToday,viewObjects,viewDependencies,viewAppFiles,viewFeatureFiles,viewSupportFiles,viewRelease,viewProject,viewUpgradePaths,viewEnvironmentVariables</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewISToday,viewObjects,viewDependencies,viewAppFiles,viewFeatureFiles,viewSupportFiles,viewRelease,viewProject,viewUpgradePaths,viewEnvironmentVariables,viewSystemSearch</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>

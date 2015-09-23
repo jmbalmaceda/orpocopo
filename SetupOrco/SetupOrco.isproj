@@ -37,9 +37,5 @@
 			<Name>Orco_Configuration</Name>
 			<Project>{3E0F7C46-F61C-4D53-831D-C0D91BE08DF8}</Project>
 		</ProjectReference>
-		<ProjectReference Include="..\Wizard_Demo\Wizard_Demo.csproj">
-			<Name>Wizard_Demo</Name>
-			<Project>{7197D102-9AD0-40D8-8B85-B0216C82C5D4}</Project>
-		</ProjectReference>
 	</ItemGroup>
 </Project>
