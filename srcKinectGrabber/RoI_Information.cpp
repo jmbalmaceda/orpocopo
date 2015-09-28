@@ -32,6 +32,7 @@ using namespace std;
 
 	bool RoI_Information::canDraw = false;
 	int RoI_Information::threshold = 120;
+	bool RoI_Information::ignoreTimes = false;
 
 RoI_Information::RoI_Information(char *propertyFilePath)
 {
@@ -42,6 +43,7 @@ RoI_Information::RoI_Information(char *propertyFilePath)
 	//read .ini file
 	CIniReader iniReader(propertyFilePath);
 	sleepTime = iniReader.ReadInteger("TIMES", "sleepTime", 200);
+	ignoreTimes = iniReader.ReadBoolean("TIMES", "ignoreTimes", false);
 	xMaxROI = iniReader.ReadInteger("ROI", "xMaxROI", 0);
 	xMinROI = iniReader.ReadInteger("ROI", "xMinROI", 0);
 	yMinROI = iniReader.ReadInteger("ROI", "yMinROI", 0);

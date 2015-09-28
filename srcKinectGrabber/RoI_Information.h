@@ -28,6 +28,9 @@ public:
 	static bool canDraw;
 	///
 	static int threshold;
+	/// Determina si se debe respetar los horarios de análisis o se ejecuta sin importar el mismo.
+	static bool ignoreTimes;
+
 
 	RoI_Information(char* propertyFilePath);
 	~RoI_Information(void);
