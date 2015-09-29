@@ -10,8 +10,6 @@
 
 using namespace std;
 
-
-
 DBConnection::~DBConnection(void)
 {
 	/* close connection */
@@ -124,9 +122,12 @@ bool DBConnection::insertPickUpInformation(int frame, int count_blobs, int blob_
 
 	/// Dada un horario, obtiene en la base de datos si está en un periodo de tiempo en el cual hay que analizar.
 	/// Si esto es así, devuelve hasta qué hora hay que analizar. Si no se está en un horario de análisis, devuelve null;
-	struct tm* DBConnection::startProcessing(struct tm* time){
-		struct tm* salida = NULL;
-		string sql("select finish from times where week_day=");
+	struct recordSettings * DBConnection::startProcessing(struct tm* time){
+		struct recordSettings * info_answer = NULL;
+		struct tm* timetable = NULL;
+		int rec_video;
+		int rec_db;
+		string sql("select finish, rec_video, rec_db from times where week_day=");
 		sql.append(to_string(time->tm_wday));
 		sql.append(" and start <= '");
 		sql.append(to_string(time->tm_hour));
@@ -144,20 +145,41 @@ bool DBConnection::insertPickUpInformation(int frame, int count_blobs, int blob_
 			res = mysql_use_result(conn);
 
 			while ((row = mysql_fetch_row(res)) != NULL){
-				salida = new tm();
+				timetable = new tm();
 				// Acá estoy esperando algo del tipo hh:mm:ss
-				// printf("%s\n", row[0]);
+				printf("%s\n", row[0]);
+				
+				// Columnas rec_video y rec_db
+				printf("%s\n", row[1]);
+				printf("%s\n", row[2]);
+				
+				///copio la segunda variable de la consulta, rec_video
+				rec_video = atoi(row[1]);
+				//cuando la imprime imprime null en vez de 0
+				printf("%s\n", rec_video);
+				
+				///copio la tercer variable de la consulta, rec_db
+				rec_db = atoi(row[2]);
+				//cuando la imprime imprime revienta!!!! esto es cuando tiene un 1
+				printf("%s\n", rec_db );
+
 				const char* finish_str = row[0];
 				char* h = new char[2];
 				char* m = new char[2];
 				char* s = new char[2];
 				strncpy(h, finish_str, 2);
-				salida->tm_hour = stoi(h);
+				timetable->tm_hour = stoi(h);
 				strncpy(m, finish_str+=3, 2);
-				salida->tm_min = stoi(m);
+				timetable->tm_min = stoi(m);
 				strncpy(s, finish_str+=3, 2);
-				salida->tm_sec = stoi(s);
+				timetable->tm_sec = stoi(s);
+
+				
 			}
 		}
-		return salida;
+		//info_answer->time_table = timetable;
+		//info_answer->rec_video = rec_video;
+		//info_answer->rec_db = rec_db;
+
+		return info_answer;
 	}
