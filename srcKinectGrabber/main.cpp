@@ -79,16 +79,12 @@ char* outputDepthVideo;
 
 char* dbFilePath;
 
-
 int frame = 1;
-
-
 
 static CvVideoWriter* gbWriterRGB = NULL;
 static CvVideoWriter* gbWriterDepth = NULL;
 
 using namespace std;
-
 
 GLubyte data[width*height*cBytesPerPixel];
 GLubyte dataRGB[width*height*cBytesPerPixel];
@@ -883,6 +879,9 @@ int compareTime(struct tm* t1, struct tm* t2){
 }
 
 /// Inicia el procesamiento hasta que se acaba la entrada o hasta que se llega a la hora de cierre (finish time)
+/*
+void ejecutar(struct recordSettings* dataRecord){
+*/
 void ejecutar(struct tm* finish_time){
 	if (!RoI_Information::readFromKinect){
 		char* rgb_path_aux = new char[RoI_Information::rgb_video_in.length() +1];
@@ -905,6 +904,8 @@ void ejecutar(struct tm* finish_time){
 		}while(initKinect_ok==-1 && intentos<10);
 	}
 
+	//graba solo si rec_video es true
+	//if ((dataRecord->rec_video == 1) && RoI_Information::save_video)
 	if (RoI_Information::save_video){
 		// Grabar los videos en archivos
 		startStoringDepthVideo(640,480);
@@ -923,11 +924,21 @@ void ejecutar(struct tm* finish_time){
 		now_time  = localtime(&now);
 	} 
 
+	//detiene la grabacion solo si rec_video es true
+	//if ((dataRecord->rec_video == 1) && RoI_Information::save_video)
 	if (RoI_Information::save_video){
 		stopStoringDepthVideo();
 		stopStoringRGBVideo();
 	}
 }
+
+
+///estructura para almacenar setting de base de datos
+typedef struct recordSettings{
+	struct tm* time_table;
+	int rec_video;
+	int rec_db;
+} ; 
 
 bool salir = false;
 /// Bucle que se queda esperando hasta que comience el horario de análisis
@@ -936,11 +947,16 @@ void esperarInicio(){
 	while(!salir){
 		time_t t = time(0);
 		struct tm* now  = localtime(&t);
+		//struct tm* finish = myDBConnection->startProcessing(now);
+		
+		recordSettings* data_record;
+		data_record = myDBConnection->startProcessing(now);
+		struct tm* finish = data_record->time_table;
 
-		struct tm* finish = myDBConnection->startProcessing(now);
 		if (finish != NULL){
 			cout << "comienza el análisis hasta las "<<finish->tm_hour<<":"<<finish->tm_min<<" horas\n";
 			ejecutar(finish);
+			//ejecutar(data_record);
 			cout << "Esperando hasta que comience la próxima hora de análisis\n";
 		}else{
 			//cvWaitKey(60000);
