@@ -915,7 +915,7 @@ void ejecutar(struct tm* finish_time){
 	int cantPU = 0;
 	time_t now = time(0);
 	struct tm* now_time  = localtime(&now);
-	while (!eof() && compareTime(finish_time, now_time)>0)
+	while (!eof() && (RoI_Information::ignoreTimes || compareTime(finish_time, now_time)>0))
 	{
 		processCapture();
 		cvWaitKey(RoI_Information::sleepTime);
@@ -953,8 +953,10 @@ void esperarInicio(){
 		data_record = myDBConnection->startProcessing(now);
 		struct tm* finish = data_record->time_table;
 
-		if (finish != NULL){
-			cout << "comienza el análisis hasta las "<<finish->tm_hour<<":"<<finish->tm_min<<" horas\n";
+		//struct tm* finish = myDBConnection->startProcessing(now);
+		if (RoI_Information::ignoreTimes || finish != NULL){
+			if (finish != NULL)	
+				cout << "comienza el análisis hasta las "<<finish->tm_hour<<":"<<finish->tm_min<<" horas\n";
 			ejecutar(finish);
 			//ejecutar(data_record);
 			cout << "Esperando hasta que comience la próxima hora de análisis\n";
