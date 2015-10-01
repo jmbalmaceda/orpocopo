@@ -953,7 +953,6 @@ void esperarInicio(){
 		data_record = myDBConnection->startProcessing(now);
 		struct tm* finish = data_record->time_table;
 
-		//struct tm* finish = myDBConnection->startProcessing(now);
 		if (RoI_Information::ignoreTimes || finish != NULL){
 			if (finish != NULL)	
 				cout << "comienza el análisis hasta las "<<finish->tm_hour<<":"<<finish->tm_min<<" horas\n";
