@@ -148,20 +148,9 @@ bool DBConnection::insertPickUpInformation(int frame, int count_blobs, int blob_
 				timetable = new tm();
 				// Acá estoy esperando algo del tipo hh:mm:ss
 				printf("%s\n", row[0]);
-				
 				// Columnas rec_video y rec_db
 				printf("%s\n", row[1]);
 				printf("%s\n", row[2]);
-				
-				///copio la segunda variable de la consulta, rec_video
-				rec_video = atoi(row[1]);
-				//cuando la imprime imprime null en vez de 0
-				printf("%s\n", rec_video);
-				
-				///copio la tercer variable de la consulta, rec_db
-				rec_db = atoi(row[2]);
-				//cuando la imprime imprime revienta!!!! esto es cuando tiene un 1
-				printf("%s\n", rec_db );
 
 				const char* finish_str = row[0];
 				char* h = new char[2];
@@ -174,12 +163,24 @@ bool DBConnection::insertPickUpInformation(int frame, int count_blobs, int blob_
 				strncpy(s, finish_str+=3, 2);
 				timetable->tm_sec = stoi(s);
 
+				///copio la segunda variable de la consulta, rec_video
+				const char* str_video = row[1];
+				char* vid = new char[1];
+				strncpy(vid, str_video, 1);
+				rec_video = stoi(vid);
 				
+				///copio la segunda variable de la consulta, rec_video
+				const char* str_db = row[2];
+				char* db = new char[2];
+				strncpy(db, str_db, 1);
+				rec_db = stoi(db);
+
 			}
 		}
-		//info_answer->time_table = timetable;
-		//info_answer->rec_video = rec_video;
-		//info_answer->rec_db = rec_db;
+
+		info_answer->time_table = timetable;
+		info_answer->rec_video = rec_video;
+		info_answer->rec_db = rec_db;
 
 		return info_answer;
 	}
