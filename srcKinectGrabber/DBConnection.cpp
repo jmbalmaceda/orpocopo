@@ -7,6 +7,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <sys/timeb.h>
+#include "RoI_Information.h"
 
 using namespace std;
 
@@ -122,8 +123,7 @@ bool DBConnection::insertPickUpInformation(int frame, int count_blobs, int blob_
 
 	/// Dada un horario, obtiene en la base de datos si está en un periodo de tiempo en el cual hay que analizar.
 	/// Si esto es así, devuelve hasta qué hora hay que analizar. Si no se está en un horario de análisis, devuelve null;
-	struct recordSettings * DBConnection::startProcessing(struct tm* time){
-		struct recordSettings * info_answer = NULL;
+	struct tm * DBConnection::startProcessing(struct tm* time){
 		struct tm* timetable = NULL;
 		int rec_video;
 		int rec_db;
@@ -147,10 +147,10 @@ bool DBConnection::insertPickUpInformation(int frame, int count_blobs, int blob_
 			while ((row = mysql_fetch_row(res)) != NULL){
 				timetable = new tm();
 				// Acá estoy esperando algo del tipo hh:mm:ss
-				printf("%s\n", row[0]);
+				//printf("%s\n", row[0]);
 				// Columnas rec_video y rec_db
-				printf("%s\n", row[1]);
-				printf("%s\n", row[2]);
+				//printf("%s\n", row[1]);
+				//printf("%s\n", row[2]);
 
 				const char* finish_str = row[0];
 				char* h = new char[2];
@@ -178,9 +178,8 @@ bool DBConnection::insertPickUpInformation(int frame, int count_blobs, int blob_
 			}
 		}
 
-		info_answer->time_table = timetable;
-		info_answer->rec_video = rec_video;
-		info_answer->rec_db = rec_db;
 
-		return info_answer;
+		RoI_Information::save_video = rec_video == 1;
+		RoI_Information::save_csv_file = rec_db == 1;
+		return timetable;
 	}

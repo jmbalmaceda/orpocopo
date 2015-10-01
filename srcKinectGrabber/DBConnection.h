@@ -4,12 +4,6 @@
 
 using namespace std;
 
-///estructura para almacenar setting de base de datos
-struct recordSettings{
-	struct tm* time_table;
-	int rec_video;
-	int rec_db;
-} ; 
 
 class DBConnection
 {
@@ -28,6 +22,6 @@ public:
 
 	bool insertPickUpInformation(int frame, int count_blobs, int blob_id, int blob_x, int blob_y, int blob_depth);
 
-	struct recordSettings * startProcessing(struct tm*);
+	struct tm * startProcessing(struct tm*);
 };
 

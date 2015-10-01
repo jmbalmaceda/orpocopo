@@ -882,7 +882,7 @@ int compareTime(struct tm* t1, struct tm* t2){
 /*
 void ejecutar(struct recordSettings* dataRecord){
 */
-void ejecutar(recordSettings* settings){
+void ejecutar(tm* finish){
 	if (!RoI_Information::readFromKinect){
 		char* rgb_path_aux = new char[RoI_Information::rgb_video_in.length() +1];
 		strcpy(rgb_path_aux, RoI_Information::rgb_video_in.c_str());
@@ -915,7 +915,7 @@ void ejecutar(recordSettings* settings){
 	int cantPU = 0;
 	time_t now = time(0);
 	struct tm* now_time  = localtime(&now);
-	while (!eof() && (RoI_Information::ignoreTimes || compareTime(settings->time_table, now_time)>0))
+	while (!eof() && (RoI_Information::ignoreTimes || compareTime(finish, now_time)>0))
 	{
 		processCapture();
 		cvWaitKey(RoI_Information::sleepTime);
@@ -941,15 +941,14 @@ void esperarInicio(){
 		struct tm* now  = localtime(&t);
 		//struct tm* finish = myDBConnection->startProcessing(now);
 		
-		recordSettings* data_record;
-		data_record = myDBConnection->startProcessing(now);
-		struct tm* finish = data_record->time_table;
+		
+		struct tm* finish = myDBConnection->startProcessing(now);
 
 		if (RoI_Information::ignoreTimes || finish != NULL){
 			if (finish != NULL)	
 				cout << "comienza el análisis hasta las "<<finish->tm_hour<<":"<<finish->tm_min<<" horas\n";
 			//ejecutar(finish);
-			ejecutar(data_record);
+			ejecutar(finish);
 			cout << "Esperando hasta que comience la próxima hora de análisis\n";
 		}else{
 			//cvWaitKey(60000);
