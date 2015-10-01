@@ -3,6 +3,14 @@
 #include <string>
 
 using namespace std;
+
+///estructura para almacenar setting de base de datos
+struct recordSettings{
+	struct tm* time_table;
+	int rec_video;
+	int rec_db;
+} ; 
+
 class DBConnection
 {
 private:

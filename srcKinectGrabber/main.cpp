@@ -932,14 +932,6 @@ void ejecutar(struct tm* finish_time){
 	}
 }
 
-
-///estructura para almacenar setting de base de datos
-typedef struct recordSettings{
-	struct tm* time_table;
-	int rec_video;
-	int rec_db;
-} ; 
-
 bool salir = false;
 /// Bucle que se queda esperando hasta que comience el horario de análisis
 void esperarInicio(){
