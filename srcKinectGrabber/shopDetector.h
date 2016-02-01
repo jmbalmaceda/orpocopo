@@ -58,7 +58,7 @@ public :
 		this->pathCSV = pathCSV;
 		stack= new point[15004] ; imgClone = visited = iDepth = NULL; invert1 = false; 
 		puDs.push_back( new PickUpDetector(pathFile, cvRect(RoI_Information::xMinROI,RoI_Information::yMinROI,RoI_Information::xMaxROI-RoI_Information::xMinROI,RoI_Information::yMaxROI - RoI_Information::yMinROI), "pickUps_2",1) );
-		cvInitFont(&font, CV_FONT_HERSHEY_SIMPLEX, 0.8, 0.8, 0, 1, 8);
+		cvInitFont(&font, CV_FONT_HERSHEY_SIMPLEX, 0.6, 0.6, 0, 1, 8);
 		invert1 = false;
 
 	}

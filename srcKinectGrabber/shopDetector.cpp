@@ -769,7 +769,6 @@ void  ShopDetector::drawAndUpdate(IplImage *imgD,IplImage *imgRGB, int frameNro,
 {
 	// Asocio con los que ya tenia
 
-
 	if (invert1)
 		drawBlobs(blobs, imgRGB,true,frameNro); 
 	else
@@ -870,25 +869,45 @@ void ShopDetector::drawBlobs(vector<Blob*> allBlobs , IplImage *imgRGB , bool dr
 		else
 			rejectedBlobs++;
 
+	//people count
 	_itoa(possiblePeople,conv,10);
 	std::string sp(conv);
+	sp = "ple:" + sp;
 
+	//detecta personas que entran en la gondola
 	_itoa(rejectedBlobs,conv,10);
 	std::string sr(conv);
+	sr = "dtct:" + sr;
 
-
+	//frames
 	char convC[10];
 	_itoa(frameNro,convC,10);
 	std::string s3(convC);
+	s3 = "frm:" + s3;
 
-
-
+	//blobs
 	char convB[10];
 	_itoa(blobsInROI,convB,10);
 	std::string s2(convB);
+	s2 = "bls:" + s2;
 
+	//fondo negro de datos
+	cvRectangle(imgRGB, cvPoint(10,5),cvPoint(265,18), cvScalar(0, 0, 0), 18, 8, 0);
+
+	//fecha y horario
+	cvPutText(imgRGB, dbConnection->getCurrentTimeAsString().c_str(), cvPoint(6,18), &font, cvScalar(0,255,255));	
+
+	//numero de frame
+	//cvPutText(imgRGB , s3.c_str(),cvPoint(280,15), &font , cvScalar(0,255,255));
+	
 	//cantidad de blobs in roi
-	cvPutText(imgRGB, s2.c_str(), cvPoint(300,30), &font, cvScalar(0, 255, 255));
+	//cvPutText(imgRGB, s2.c_str(), cvPoint(420,15), &font, cvScalar(0, 255, 255));
+
+	//blobs count
+	//cvPutText(imgRGB , sp.c_str(),cvPoint(500,15), &font , cvScalar(0,255,255));
+
+	//rejected blobs count
+	//cvPutText(imgRGB , sr.c_str(),cvPoint(570,15), &font , cvScalar(0,255,255));
 
 	//draw ROI gondola
 	for (unsigned int i=0; i<puDs.size(); i++)
@@ -900,17 +919,6 @@ void ShopDetector::drawBlobs(vector<Blob*> allBlobs , IplImage *imgRGB , bool dr
 	//draw LineLeft
 	cvRectangle(imgRGB, cvPoint(RoI_Information::xMinLineLeft,RoI_Information::yMinLineLeft),cvPoint(RoI_Information::xMaxLineLeft,RoI_Information::yMaxLineLeft), cvScalar(0, 0, 255), 3, 8, 0);
 
-	//fecha y horario
-	cvPutText(imgRGB, dbConnection->getCurrentTimeAsString().c_str(), cvPoint(10,30), &font, cvScalar(255,50,50));
-	
-	//numero de frame
-	cvPutText(imgRGB , s3.c_str(),cvPoint(100,30), &font , cvScalar(0,255,255));
-
-	//blobs count
-	cvPutText(imgRGB , sp.c_str(),cvPoint(500,30), &font , cvScalar(0,255,255));
-
-	//rejected blobs count
-	cvPutText(imgRGB , sr.c_str(),cvPoint(550,30), &font , cvScalar(255,50,50));
 	//#ifdef _DEBUG
 	cvShowImage("ImageRGB", imgRGB);
 	//cvShowImage("ImageDepth", iDepth);
@@ -933,7 +941,6 @@ void ShopDetector::drawBlobsInGondola(vector<Blob*> blobs , IplImage *imgRGB)
 
 	cvPutText(imgRGB, s2.c_str(), cvPoint(300,30), &font, cvScalar(255, 255, 255));
 	cvRectangle(imgRGB, cvPoint(RoI_Information::xMinROI,RoI_Information::yMinROI),cvPoint(RoI_Information::xMaxROI,RoI_Information::yMaxROI), cvScalar(0, 255, 255), 3, 8, 0);
-
 
 }
 

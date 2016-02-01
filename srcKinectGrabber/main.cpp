@@ -638,8 +638,8 @@ extern "C"{
 
 			int size;   
 			
-		//	cvShowImage("input Depth", globalki->iDepth);
-		//	cvShowImage("input RGB", globalki->iRGB);
+			//cvShowImage("input Depth", globalki->iDepth);
+			//cvShowImage("input RGB", globalki->iRGB);
 			cvCopy(globalki->iDepth, gdepthImageC);
 			cvCopy(globalki->iRGB, grgbImageC);
 
@@ -905,7 +905,6 @@ void ejecutar(tm* finish){
 	}
 
 	//graba solo si rec_video es true
-	//if ((dataRecord->rec_video == 1) && RoI_Information::save_video)
 	if (RoI_Information::save_video){
 		// Grabar los videos en archivos
 		startStoringDepthVideo(640,480);
@@ -925,7 +924,6 @@ void ejecutar(tm* finish){
 	} 
 
 	//detiene la grabacion solo si rec_video es true
-	//if ((dataRecord->rec_video == 1) && RoI_Information::save_video)
 	if (RoI_Information::save_video){
 		stopStoringDepthVideo();
 		stopStoringRGBVideo();
