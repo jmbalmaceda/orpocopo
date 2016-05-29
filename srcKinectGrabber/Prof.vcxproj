@@ -79,7 +79,7 @@
     <TargetExt>.dll</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\Proyecto ORCO\opencv246\build\include;C:\Program Files\Microsoft SDKs\Kinect\v1.8\inc;$(IncludePath)</IncludePath>
+    <IncludePath>D:\Proyecto ORCO\opencv246\build\include;C:\Program Files\Microsoft SDKs\Kinect\v1.8\inc;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Program Files\Microsoft SDKs\Kinect\v1.8\lib\x86;$(LibraryPath)</LibraryPath>
     <OutDir>..\app\release</OutDir>
   </PropertyGroup>
@@ -122,14 +122,14 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Proyecto ORCO\boost_1_58_0;C:\Program Files %28x86%29\MySQL\mysql-5.6.25-win32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Proyecto ORCO\boost_1_58_0;C:\Program Files %28x86%29\MySQL\mysql-5.6.25-win32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>kinect10.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;opencv_core246.lib;opencv_highgui246.lib;opencv_video246.lib;opencv_ml246.lib;opencv_legacy246.lib;opencv_imgproc246.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Proyecto ORCO\boost_1_58_0;C:\Program Files %28x86%29\MySQL\mysql-5.6.25-win32\lib;C:\Proyecto ORCO\opencv246\build\x86\vc11\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\Proyecto ORCO\boost_1_58_0;C:\Program Files %28x86%29\MySQL\mysql-5.6.25-win32\lib;D:\Proyecto ORCO\opencv246\build\x86\vc11\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -183,8 +183,8 @@
     <ResourceCompile Include="BlobsDetection.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Library Include="..\..\..\Program Files (x86)\MySQL\mysql-5.6.25-win32\lib\libmysql.lib" />
-    <Library Include="..\..\..\Program Files (x86)\MySQL\mysql-5.6.25-win32\lib\libmysqld.lib" />
+    <Library Include="C:\Program Files (x86)\MySQL\mysql-5.6.25-win32\lib\libmysql.lib" />
+    <Library Include="C:\Program Files (x86)\MySQL\mysql-5.6.25-win32\lib\libmysqld.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
