@@ -905,9 +905,10 @@ void ejecutar(tm* finish){
 	}
 
 	//graba solo si rec_video es true
-	if (RoI_Information::save_video){
-		// Grabar los videos en archivos
+	if (RoI_Information::save_video_depth){
 		startStoringDepthVideo(640,480);
+	}
+	if (RoI_Information::save_video_rgb){
 		startStoringRGBVideo(640,480);
 	}
 
@@ -924,9 +925,11 @@ void ejecutar(tm* finish){
 	} 
 
 	//detiene la grabacion solo si rec_video es true
-	if (RoI_Information::save_video){
-		stopStoringDepthVideo();
+	if (RoI_Information::save_video_rgb){
 		stopStoringRGBVideo();
+	}
+	if (RoI_Information::save_video_depth){
+		stopStoringDepthVideo();
 	}
 }
 
@@ -940,7 +943,9 @@ void esperarInicio(){
 		//struct tm* finish = myDBConnection->startProcessing(now);
 		
 		
-		struct tm* finish = myDBConnection->startProcessing(now);
+		struct tm* finish = NULL;
+		if (!RoI_Information::ignoreTimes)
+			myDBConnection->startProcessing(now);
 
 		if (RoI_Information::ignoreTimes || finish != NULL){
 			if (finish != NULL)	

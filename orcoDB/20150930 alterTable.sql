@@ -1,2 +1,0 @@
-ALTER TABLE `times` ADD `rec_video` INT NOT NULL DEFAULT '0' ;
-ALTER TABLE `times` ADD `rec_db` INT NOT NULL DEFAULT '1' ;

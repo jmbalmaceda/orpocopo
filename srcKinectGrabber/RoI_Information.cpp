@@ -23,7 +23,8 @@ using namespace std;
 	bool RoI_Information::save_csv_file = true;
 	string RoI_Information::csv_file_path = "orco.csv";
 
-	bool RoI_Information::save_video = true;
+	bool RoI_Information::save_video_rgb = true;
+	bool RoI_Information::save_video_depth = false;
 	string RoI_Information::video_directory_path = "videos";
 	string RoI_Information::rgb_video_in = "video_RGB.avi";
 	string RoI_Information::depth_video_in = "video_DEPTH.avi";
@@ -65,7 +66,7 @@ RoI_Information::RoI_Information(char *propertyFilePath)
 	save_csv_file = iniReader.ReadBoolean("CSV","SAVE_CSV_FILE",false); // sacar
 	csv_file_path = iniReader.ReadString("CSV","CSV_FILE_PATH", "orco.csv"); // sacar
 
-	save_video = iniReader.ReadBoolean("VIDEO","SAVE_VIDEO",true);
+	//save_video = iniReader.ReadBoolean("VIDEO","SAVE_VIDEO",true);
 	video_directory_path = iniReader.ReadString("VIDEO","VIDEO_DIRECTORY_PATH","c:\\Users\\cito\\orcoVideos");
 	rgb_video_in = iniReader.ReadString("VIDEO", "VIDEO_RGB_IN", "video_RGB.avi");
 	depth_video_in = iniReader.ReadString("VIDEO", "VIDEO_DEPTH_IN", "video_DEPTH.avi");

@@ -18,7 +18,8 @@ public:
 	static bool save_csv_file;
 	static string csv_file_path;
 	/// Video information
-	static bool save_video;
+	static bool save_video_rgb;
+	static bool save_video_depth;
 	static string video_directory_path;
 	/// Leer desde kinect (true) o desde video (false)
 	static bool readFromKinect;

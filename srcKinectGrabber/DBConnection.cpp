@@ -71,6 +71,9 @@ string DBConnection::getCurrentTimeAsString(){
 		return result;
 	}
 
+bool DBConnection::insertStartProcessingLog(string video_rgb_path, string video_depth_path){
+}
+
 bool DBConnection::insertPickUpInformation(int frame, int count_blobs, int blob_id, int blob_x, int blob_y, int blob_depth, int blob_hand_id, int blob_hand_x, int blob_hand_y, int blob_hand_depth){
 		string sql("INSERT INTO `pickup` (`frame`, `current_time`, `count_blobs`, `blob_id`, `blob_x`, `blob_y`, `blob_depth`, `blob_hand_id`, `blob_hand_x`, `blob_hand_y`, `blob_hand_depth`) VALUES (");
 		sql.append(to_string(frame).c_str());
@@ -125,9 +128,10 @@ bool DBConnection::insertPickUpInformation(int frame, int count_blobs, int blob_
 	/// Si esto es así, devuelve hasta qué hora hay que analizar. Si no se está en un horario de análisis, devuelve null;
 	struct tm * DBConnection::startProcessing(struct tm* time){
 		struct tm* timetable = NULL;
-		int rec_video = 0;
+		int rec_video_rgb = 0;
+		int rec_video_depth = 0;
 		int rec_db = 0;
-		string sql("select finish, rec_video, rec_db from times where week_day=");
+		string sql("select finish, rec_video_rgb, rec_video_depth, rec_db from times where week_day=");
 		sql.append(to_string(time->tm_wday));
 		sql.append(" and start <= '");
 		sql.append(to_string(time->tm_hour));
@@ -160,14 +164,20 @@ bool DBConnection::insertPickUpInformation(int frame, int count_blobs, int blob_
 				strncpy(s, finish_str+=3, 2);
 				timetable->tm_sec = stoi(s);
 
-				///copio la segunda variable de la consulta, rec_video
-				const char* str_video = row[1];
-				char* vid = new char[1];
-				strncpy(vid, str_video, 1);
-				rec_video = stoi(vid);
+				///copio la segunda variable de la consulta, rec_video_rgb
+				const char* str_video_rgb = row[1];
+				char* vid_rgb = new char[1];
+				strncpy(vid_rgb, str_video_rgb, 1);
+				rec_video_rgb = stoi(vid_rgb);
 				
+				///copio la segunda variable de la consulta, rec_video_depth
+				const char* str_video_depth = row[2];
+				char* vid_depth = new char[1];
+				strncpy(vid_depth, str_video_depth, 1);
+				rec_video_depth = stoi(vid_depth);
+
 				///copio la segunda variable de la consulta, rec_video
-				const char* str_db = row[2];
+				const char* str_db = row[3];
 				char* db = new char[1];
 				strncpy(db, str_db, 1);
 				rec_db = stoi(db);
@@ -176,7 +186,8 @@ bool DBConnection::insertPickUpInformation(int frame, int count_blobs, int blob_
 		}
 
 
-		RoI_Information::save_video = rec_video == 1;
+		RoI_Information::save_video_rgb = rec_video_rgb == 1;
+		RoI_Information::save_video_depth = rec_video_depth == 1;
 		RoI_Information::save_csv_file = rec_db == 1;
 		return timetable;
 	}

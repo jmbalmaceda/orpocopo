@@ -22,6 +22,8 @@ public:
 
 	bool insertPickUpInformation(int frame, int count_blobs, int blob_id, int blob_x, int blob_y, int blob_depth);
 
+	bool insertStartProcessingLog(string video_rgb_path, string video_depth_path);
+
 	struct tm * startProcessing(struct tm*);
 };
 

@@ -143,6 +143,7 @@ public :
 						}
 						else
 						{
+							//TODO: Acá es donde es donde se detecta un nuevo pickup
 							pu = new PickUp();
 							pu->x = vFrame[i]->r.x;
 							pu->width = vFrame[i]->r.width;
@@ -155,9 +156,6 @@ public :
 					}
 
 				}
-			#ifdef _DEBUG
-				puD->draw();
-			#endif
 				cvResetImageROI( iDepth); 
 			}
 			// busca la persona
