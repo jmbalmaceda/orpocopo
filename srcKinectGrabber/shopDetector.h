@@ -31,7 +31,6 @@ public :
 	std::vector<Blob*>  peopleblobs;
 	point* stack;
 	int newBlobsDetected ; 
-	int possiblePeople ;
 	CvFont font;
 	bool invert1;
 
@@ -212,6 +211,8 @@ public :
 	}
 
 	void drawBlobs(vector<Blob*> allBlobs , IplImage *imgRGB , bool drawLines, int frameNro );
+
+	void ShopDetector::drawCurrentTimeOnImage(IplImage* img, int frameNro);
 
 	void drawBlobsInGondola(vector<Blob*> blobs , IplImage *imgRGB);
 

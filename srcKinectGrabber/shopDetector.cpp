@@ -855,59 +855,16 @@ void ShopDetector::drawBlobs(vector<Blob*> allBlobs , IplImage *imgRGB , bool dr
 			}
 	}
 
-	possiblePeople = 0;
-	int rejectedBlobs = 0;
-
 	peopleblobs.clear();
 
 	for (unsigned int i=0; i<allBlobs.size();i++)
 		if ( allBlobs[i]->blobsHistory.size() > 2 )
 		{
 			peopleblobs.push_back(allBlobs[i]);
-			possiblePeople++;
 		}
-		else
-			rejectedBlobs++;
 
-	//people count
-	_itoa(possiblePeople,conv,10);
-	std::string sp(conv);
-	sp = "ple:" + sp;
+	drawCurrentTimeOnImage(imgRGB, frameNro);
 
-	//detecta personas que entran en la gondola
-	_itoa(rejectedBlobs,conv,10);
-	std::string sr(conv);
-	sr = "dtct:" + sr;
-
-	//frames
-	char convC[10];
-	_itoa(frameNro,convC,10);
-	std::string s3(convC);
-	s3 = "frm:" + s3;
-
-	//blobs
-	char convB[10];
-	_itoa(blobsInROI,convB,10);
-	std::string s2(convB);
-	s2 = "bls:" + s2;
-
-	//fondo negro de datos
-	cvRectangle(imgRGB, cvPoint(10,5),cvPoint(265,18), cvScalar(0, 0, 0), 18, 8, 0);
-
-	//fecha y horario
-	cvPutText(imgRGB, dbConnection->getCurrentTimeAsString().c_str(), cvPoint(6,18), &font, cvScalar(0,255,255));	
-
-	//numero de frame
-	//cvPutText(imgRGB , s3.c_str(),cvPoint(280,15), &font , cvScalar(0,255,255));
-	
-	//cantidad de blobs in roi
-	//cvPutText(imgRGB, s2.c_str(), cvPoint(420,15), &font, cvScalar(0, 255, 255));
-
-	//blobs count
-	//cvPutText(imgRGB , sp.c_str(),cvPoint(500,15), &font , cvScalar(0,255,255));
-
-	//rejected blobs count
-	//cvPutText(imgRGB , sr.c_str(),cvPoint(570,15), &font , cvScalar(0,255,255));
 
 	//draw ROI gondola
 	for (unsigned int i=0; i<puDs.size(); i++)
@@ -925,6 +882,20 @@ void ShopDetector::drawBlobs(vector<Blob*> allBlobs , IplImage *imgRGB , bool dr
 	//#endif
 	//cvWaitKey(10);
 }
+
+
+/// Dibuja sobre una imagen la hora actual
+void ShopDetector::drawCurrentTimeOnImage(IplImage* img, int frameNro){
+	//fondo negro de datos
+	cvRectangle(img, cvPoint(10,5),cvPoint(350,18), cvScalar(0, 0, 0), 18, 8, 0);
+
+	//fecha y horario
+	cvPutText(img, dbConnection->getCurrentTimeAsString().c_str(), cvPoint(6,18), &font, cvScalar(0,255,255));
+
+	// frame
+	cvPutText(img, to_string(frameNro).c_str(), cvPoint(280,18), &font, cvScalar(0,255,255));
+}
+
 
 void ShopDetector::drawBlobsInGondola(vector<Blob*> blobs , IplImage *imgRGB)
 {

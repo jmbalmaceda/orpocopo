@@ -518,6 +518,7 @@ extern "C"{
 
 	IplImage* gdepthImageC ;
 	IplImage* grgbImageC ;
+	IplImage* imgToStoreInVideo;
 	int gframeCount = 0;
 
 	__declspec(dllexport) extern int itsAlive()
@@ -535,7 +536,7 @@ extern "C"{
 		globalSD = new ShopDetector(1,"", saveCSV, "", dbFilePath);
 		gdepthImageC = cvCreateImage( cvSize(640,480),8,3);
 		grgbImageC = cvCreateImage( cvSize(640,480),8,3);
-
+		imgToStoreInVideo = cvCreateImage(cvSize(640,480),8,3);
 		if (globalki->init()) return 0;
 		else return -1;
 	}
@@ -548,7 +549,7 @@ extern "C"{
 		globalSD = new ShopDetector(1,"", saveCSV, "c:/temp/orco.CSV", dbFilePath);
 		gdepthImageC = cvCreateImage( cvSize(640,480),8,3);
 		grgbImageC = cvCreateImage( cvSize(640,480),8,3);
-
+		imgToStoreInVideo = cvCreateImage(cvSize(640,480),8,3);
 		if (globalki->init()) return 0;
 		else return -1;
 	}
@@ -645,7 +646,9 @@ extern "C"{
 
 			if (storeRGBVideo)
 			{
-				saveVideos(gbWriterRGB , globalki->iRGB);
+				cvCopy(globalki->iRGB, imgToStoreInVideo);
+				globalSD->drawCurrentTimeOnImage(imgToStoreInVideo, gframeCount);
+				saveVideos(gbWriterRGB , imgToStoreInVideo);
 			}
 
 			if (storeDepthVideo)
