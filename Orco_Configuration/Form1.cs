@@ -34,7 +34,6 @@ namespace Orco_Configuration
         bool readFromKinect;
 
         /// Property File
-        IniFile propertyFile;
         IniFile propertyROIFile;
         String ROI_FILE_PATH = "ROI_FILE_PATH";
         /// Secciones
@@ -52,18 +51,21 @@ namespace Orco_Configuration
         String VIDEO_DIRECTORY_PATH = "VIDEO_DIRECTORY_PATH";
         String READ_FROM_KINECT = "READ_FROM_KINECT";
 
+        /// <summary>
+        /// Ubicación de la configuración
+        /// </summary>
+        string orco_conf;
+
         public Form1()
         {
             InitializeComponent();
-            propertyFile = new IniFile(".\\Configuration.ini");
-            String filePath = propertyFile.IniReadValue(INFO_SECTION, ROI_FILE_PATH);
-            if (filePath == null || filePath.Length == 0)
+            orco_conf = Environment.GetEnvironmentVariable("ORCO_CONF");
+            if (orco_conf == null || orco_conf.Length == 0)
             {
-                toolStripStatusLabel1.Text = ".\\Settings.ini";
-                propertyFile.IniWriteValue(INFO_SECTION, ROI_FILE_PATH, toolStripStatusLabel1.Text);
+                MessageBox.Show("No se encuentra la variable de entorno ORCO_CONF. Por favor definirla apuntando a la ubicación de la misma.");
+                System.Environment.Exit(1);
             }
-            else
-                toolStripStatusLabel1.Text = filePath;
+            toolStripStatusLabel1.Text = orco_conf + "Settings.ini";
             updatePropertiesFromFile();
             
         }
@@ -95,7 +97,7 @@ namespace Orco_Configuration
             this.numericUpDown_xtr.ValueChanged += PASILLO_valueChange;
             this.numericUpDown_ytr.ValueChanged += PASILLO_valueChange;
             // imagen de la gondola desde arriba
-            image_path = propertyFile.IniReadValue(INFO_SECTION, IMAGE_PATH);
+            image_path = orco_conf + "gondola-top.jpg";
             if (image_path != null && image_path.Length > 0)
             {
                 loadImageFromFile();
@@ -151,9 +153,9 @@ namespace Orco_Configuration
                 this.numericUpDown_ytr.Value = Int32.Parse(propertyROIFile.IniReadValue(SETTING_SECTION, "yMinLineRight"));
             }catch(FormatException e){
                 numericUpDown_left.Value = 0;
-                numericUpDown_right.Value = 640;
+                numericUpDown_right.Value = 639;
                 numericUpDown_top.Value = 320;
-                numericUpDown_bottom.Value = 480;
+                numericUpDown_bottom.Value = 479;
                 this.numericUpDown_xtl.Value = 10;
                 this.numericUpDown_ytl.Value = 10;
                 this.numericUpDown_xbl.Value = 10;
@@ -302,7 +304,6 @@ namespace Orco_Configuration
             {
                 image_path = openFileDialog_image.FileName;
                 loadImageFromFile();
-                propertyFile.IniWriteValue(INFO_SECTION, IMAGE_PATH, image_path);
             }
         }
 
@@ -328,7 +329,6 @@ namespace Orco_Configuration
             if (openFileDialog_property.ShowDialog() == DialogResult.OK)
             {
                 toolStripStatusLabel1.Text = openFileDialog_property.FileName;
-                propertyFile.IniWriteValue(INFO_SECTION, ROI_FILE_PATH, toolStripStatusLabel1.Text);
                 updatePropertiesFromFile();
             }
         }
@@ -338,7 +338,6 @@ namespace Orco_Configuration
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 toolStripStatusLabel1.Text = saveFileDialog1.FileName;
-                propertyFile.IniWriteValue(INFO_SECTION, ROI_FILE_PATH, toolStripStatusLabel1.Text);
             }
 
         }

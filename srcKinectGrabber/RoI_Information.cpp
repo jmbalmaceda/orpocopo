@@ -26,6 +26,8 @@ using namespace std;
 	bool RoI_Information::save_video_rgb = true;
 	bool RoI_Information::save_video_depth = false;
 	string RoI_Information::video_directory_path = "videos";
+	string RoI_Information::video_rgb_path = "";
+	string RoI_Information::video_depth_path = "";
 	string RoI_Information::rgb_video_in = "video_RGB.avi";
 	string RoI_Information::depth_video_in = "video_DEPTH.avi";
 

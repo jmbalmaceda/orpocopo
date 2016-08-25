@@ -169,7 +169,7 @@
             // 
             this.numericUpDown_right.Location = new System.Drawing.Point(116, 25);
             this.numericUpDown_right.Maximum = new decimal(new int[] {
-            1024,
+            639,
             0,
             0,
             0});
@@ -180,6 +180,11 @@
             // numericUpDown_left
             // 
             this.numericUpDown_left.Location = new System.Drawing.Point(3, 25);
+            this.numericUpDown_left.Maximum = new decimal(new int[] {
+            639,
+            0,
+            0,
+            0});
             this.numericUpDown_left.Name = "numericUpDown_left";
             this.numericUpDown_left.Size = new System.Drawing.Size(54, 20);
             this.numericUpDown_left.TabIndex = 7;
@@ -188,7 +193,7 @@
             // 
             this.numericUpDown_bottom.Location = new System.Drawing.Point(59, 49);
             this.numericUpDown_bottom.Maximum = new decimal(new int[] {
-            1024,
+            479,
             0,
             0,
             0});
@@ -200,7 +205,7 @@
             // 
             this.numericUpDown_top.Location = new System.Drawing.Point(59, 2);
             this.numericUpDown_top.Maximum = new decimal(new int[] {
-            1024,
+            479,
             0,
             0,
             0});
@@ -407,7 +412,7 @@
             // 
             this.numericUpDown_ybr.Location = new System.Drawing.Point(116, 126);
             this.numericUpDown_ybr.Maximum = new decimal(new int[] {
-            1024,
+            479,
             0,
             0,
             0});
@@ -419,7 +424,7 @@
             // 
             this.numericUpDown_xbr.Location = new System.Drawing.Point(116, 104);
             this.numericUpDown_xbr.Maximum = new decimal(new int[] {
-            1024,
+            639,
             0,
             0,
             0});
@@ -449,7 +454,7 @@
             // 
             this.numericUpDown_ytr.Location = new System.Drawing.Point(116, 25);
             this.numericUpDown_ytr.Maximum = new decimal(new int[] {
-            1024,
+            479,
             0,
             0,
             0});
@@ -461,7 +466,7 @@
             // 
             this.numericUpDown_xtr.Location = new System.Drawing.Point(116, 3);
             this.numericUpDown_xtr.Maximum = new decimal(new int[] {
-            1024,
+            639,
             0,
             0,
             0});
@@ -491,7 +496,7 @@
             // 
             this.numericUpDown_ybl.Location = new System.Drawing.Point(19, 126);
             this.numericUpDown_ybl.Maximum = new decimal(new int[] {
-            1024,
+            479,
             0,
             0,
             0});
@@ -503,7 +508,7 @@
             // 
             this.numericUpDown_xbl.Location = new System.Drawing.Point(19, 104);
             this.numericUpDown_xbl.Maximum = new decimal(new int[] {
-            1024,
+            639,
             0,
             0,
             0});
@@ -533,7 +538,7 @@
             // 
             this.numericUpDown_ytl.Location = new System.Drawing.Point(19, 25);
             this.numericUpDown_ytl.Maximum = new decimal(new int[] {
-            1024,
+            479,
             0,
             0,
             0});
@@ -545,7 +550,7 @@
             // 
             this.numericUpDown_xtl.Location = new System.Drawing.Point(19, 3);
             this.numericUpDown_xtl.Maximum = new decimal(new int[] {
-            1024,
+            639,
             0,
             0,
             0});

@@ -71,7 +71,52 @@ string DBConnection::getCurrentTimeAsString(){
 		return result;
 	}
 
-bool DBConnection::insertStartProcessingLog(string video_rgb_path, string video_depth_path){
+string DBConnection::getLastPickupId(){
+	string sql("SELECT max(`id`) from `pickup`;");
+	if (mysql_query(conn, sql.c_str())){
+			return NULL;
+		}
+	res = mysql_use_result(conn);
+
+	string salida = string();
+	while ((row = mysql_fetch_row(res)) != NULL){
+		salida = string(row[0]);
+	}
+	mysql_free_result(res);
+	return salida;
+}
+
+void replaceAll(std::string& str, const std::string& from, const std::string& to) {
+    if(from.empty())
+        return;
+    size_t start_pos = 0;
+    while((start_pos = str.find(from, start_pos)) != std::string::npos) {
+        str.replace(start_pos, from.length(), to);
+        start_pos += to.length(); // In case 'to' contains 'from', like replacing 'x' with 'yx'
+    }
+}
+
+bool DBConnection::insertLog(string log){
+	string maxId = getLastPickupId();
+	string sql("INSERT INTO `log` (`fecha`, `texto`, `last_pickup_id`, `Video_rgb`, `Video_depth`) VALUES ('");	
+	sql.append(getCurrentTimeAsString());
+	sql.append("', '");
+	sql.append(log.c_str());
+	sql.append("', ");
+	sql.append(maxId);
+	sql.append(", '");
+	string aux = string(RoI_Information::video_rgb_path);
+	replaceAll(aux, "\\","\\\\");
+	sql.append(aux);
+	sql.append("', '");
+	string aux2 = string(RoI_Information::video_depth_path);
+	replaceAll(aux2, "\\","\\\\");
+	sql.append(aux2);
+	sql.append("');");
+	if (mysql_query(conn, sql.c_str())){
+		fprintf(stderr, "Error consultando a la base de datos: %s\n", mysql_error(conn));
+	}
+	return true;
 }
 
 bool DBConnection::insertPickUpInformation(int frame, int count_blobs, int blob_id, int blob_x, int blob_y, int blob_depth, int blob_hand_id, int blob_hand_x, int blob_hand_y, int blob_hand_depth){
@@ -101,6 +146,7 @@ bool DBConnection::insertPickUpInformation(int frame, int count_blobs, int blob_
 		if (mysql_query(conn, sql.c_str())){
 			return false;
 		}
+		return true;
 	}
 
 	bool DBConnection::insertPickUpInformation(int frame, int count_blobs, int blob_id, int blob_x, int blob_y, int blob_depth){
@@ -122,6 +168,7 @@ bool DBConnection::insertPickUpInformation(int frame, int count_blobs, int blob_
 		if (mysql_query(conn, sql.c_str())){
 			return false;
 		}
+		return true;
 	}
 
 	/// Dada un horario, obtiene en la base de datos si está en un periodo de tiempo en el cual hay que analizar.

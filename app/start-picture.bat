@@ -1,0 +1,1 @@
+"%ORCO_HOME%BlobsDetection.exe" -S"%ORCO_CONF%gondola-top.jpg" -C"%ORCO_CONF%Settings.ini" -D"%ORCO_CONF%db.ini"

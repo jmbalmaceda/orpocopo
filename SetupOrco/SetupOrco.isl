@@ -348,16 +348,19 @@
 		<row><td>BlobsDetection.Resultado_principal</td><td>{A601E4F8-EF1F-4809-8B97-EDCB11C1345C}</td><td>INSTALLDIR</td><td>2</td><td/><td>blobsdetection.resultado_pri</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>BlobsDetection.S_mbolos_de_depuraci_n</td><td>{9BB891BB-2ACC-476D-93ED-5100453604E0}</td><td>INSTALLDIR</td><td>2</td><td/><td>blobsdetection.s_mbolos_de_d</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td>{1FA42715-C617-4D47-A90B-2FCCB328BBF7}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT1</td><td>{AB401F2C-A7B3-40C4-81D0-0B250F6048D9}</td><td>DesktopFolder</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT2</td><td>{0A93B27D-1CD5-4E6A-A941-D3EB60FF7647}</td><td>ORCO1</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT3</td><td>{3DB39B58-69DD-4B8B-91B5-B7432779A05B}</td><td>PersonalFolder</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>Orco_Configuration.Archivos_de_c_digo_fuente</td><td>{4518317B-7BC0-409A-8FD0-7EE2159226F7}</td><td>INSTALLDIR</td><td>2</td><td/><td>orco_configuration.archivos_1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>Orco_Configuration.Resultado_principal</td><td>{E169CDA2-FDD0-473D-8700-DA5E715B4107}</td><td>INSTALLDIR</td><td>2</td><td/><td>orco_configuration.resultado</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>Orco_Configuration.S_mbolos_de_depuraci_n</td><td>{4E51A4E0-3557-4673-9B93-A705FC7EB505}</td><td>INSTALLDIR</td><td>2</td><td/><td>orco_configuration.s_mbolos_</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>libmysql.dll</td><td>{746B8692-9030-4940-B6A5-D6B643BAF941}</td><td>INSTALLDIR</td><td>2</td><td/><td>libmysql.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>opencv_core246.dll</td><td>{A509E903-2896-4B73-9221-2AA12F1BA383}</td><td>INSTALLDIR</td><td>2</td><td/><td>opencv_core246.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>opencv_ffmpeg246.dll</td><td>{3FCE2807-FA26-48B6-9CE3-56F86B9E5499}</td><td>INSTALLDIR</td><td>2</td><td/><td>opencv_ffmpeg246.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>opencv_highgui246.dll</td><td>{C2B402F8-548E-405D-AD26-518556A4704E}</td><td>INSTALLDIR</td><td>2</td><td/><td>opencv_highgui246.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>opencv_imgproc246.dll</td><td>{40F2872E-963D-4289-8928-7A97920BF655}</td><td>INSTALLDIR</td><td>2</td><td/><td>opencv_imgproc246.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>opencv_video246.dll</td><td>{B1C21F83-DF0A-42BF-B311-A0E64CE409B1}</td><td>INSTALLDIR</td><td>2</td><td/><td>opencv_video246.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>opencv_videostab246.dll</td><td>{D02B3FC6-E615-407E-9197-E9EBA94D2E25}</td><td>INSTALLDIR</td><td>2</td><td/><td>opencv_videostab246.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>opencv_core246.dll</td><td>{3B1BEAF7-ACDC-48B1-92B9-D43248EFAE10}</td><td>INSTALLDIR</td><td>2</td><td/><td>opencv_core246.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>opencv_ffmpeg246.dll</td><td>{8DFB44CA-0B92-4CB2-A2A1-B982D0FE06B4}</td><td>INSTALLDIR</td><td>2</td><td/><td>opencv_ffmpeg246.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>opencv_highgui246.dll</td><td>{F9F83062-B5B5-467E-B68A-C43B4F14932D}</td><td>INSTALLDIR</td><td>2</td><td/><td>opencv_highgui246.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>opencv_imgproc246.dll</td><td>{20E42451-F830-4A41-8593-7A4079CE6838}</td><td>INSTALLDIR</td><td>2</td><td/><td>opencv_imgproc246.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>opencv_video246.dll</td><td>{088C9F2B-DF11-406F-93A3-CDE7FE88DFB9}</td><td>INSTALLDIR</td><td>2</td><td/><td>opencv_video246.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>opencv_videostab246.dll</td><td>{F72D06EF-089E-4E8D-8538-671B9672429F}</td><td>INSTALLDIR</td><td>2</td><td/><td>opencv_videostab246.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1066,6 +1069,9 @@
 	<table name="CreateFolder">
 		<col key="yes" def="s72">Directory_</col>
 		<col key="yes" def="s72">Component_</col>
+		<row><td>DesktopFolder</td><td>ISX_DEFAULTCOMPONENT1</td></row>
+		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT</td></row>
+		<row><td>PersonalFolder</td><td>ISX_DEFAULTCOMPONENT3</td></row>
 	</table>
 
 	<table name="CustomAction">
@@ -1166,6 +1172,7 @@
 		<row><td>MyPicturesFolder</td><td>TARGETDIR</td><td>.:MyPict~1|MyPictures</td><td/><td>0</td><td/></row>
 		<row><td>NetHoodFolder</td><td>TARGETDIR</td><td>.:NetHood</td><td/><td>0</td><td/></row>
 		<row><td>ORCO</td><td>CRITERYA</td><td>Orco</td><td/><td>0</td><td/></row>
+		<row><td>ORCO1</td><td>PersonalFolder</td><td>Orco</td><td/><td>0</td><td/></row>
 		<row><td>PersonalFolder</td><td>TARGETDIR</td><td>.:Personal</td><td/><td>0</td><td/></row>
 		<row><td>PrimaryVolumePath</td><td>TARGETDIR</td><td>.:Primar~1|PrimaryVolumePath</td><td/><td>0</td><td/></row>
 		<row><td>PrintHoodFolder</td><td>TARGETDIR</td><td>.:PRINTH~1|PrintHood</td><td/><td>0</td><td/></row>
@@ -1185,6 +1192,7 @@
 		<row><td>USERPROFILE</td><td>TARGETDIR</td><td>.:USERPR~1|UserProfile</td><td/><td>0</td><td/></row>
 		<row><td>WindowsFolder</td><td>TARGETDIR</td><td>.:Windows</td><td/><td>0</td><td/></row>
 		<row><td>WindowsVolume</td><td>TARGETDIR</td><td>.:WinRoot</td><td/><td>0</td><td/></row>
+		<row><td>newfolder1</td><td>DesktopFolder</td><td>##ID_STRING9##</td><td/><td>1</td><td/></row>
 	</table>
 
 	<table name="DrLocator">
@@ -1208,6 +1216,7 @@
 		<col def="L255">Value</col>
 		<col def="s72">Component_</col>
 		<row><td>NewEnvironment1</td><td>##ID_STRING5##</td><td>##ID_STRING6##</td><td>ISX_DEFAULTCOMPONENT</td></row>
+		<row><td>NewEnvironment2</td><td>##ID_STRING7##</td><td>##ID_STRING8##</td><td>ISX_DEFAULTCOMPONENT</td></row>
 	</table>
 
 	<table name="Error">
@@ -1881,6 +1890,9 @@
 		<row><td>AlwaysInstall</td><td>BlobsDetection.Resultado_principal</td></row>
 		<row><td>AlwaysInstall</td><td>BlobsDetection.S_mbolos_de_depuraci_n</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT</td></row>
+		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT1</td></row>
+		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT2</td></row>
+		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT3</td></row>
 		<row><td>AlwaysInstall</td><td>Orco_Configuration.Archivos_de_c_digo_fuente</td></row>
 		<row><td>AlwaysInstall</td><td>Orco_Configuration.Resultado_principal</td></row>
 		<row><td>AlwaysInstall</td><td>Orco_Configuration.S_mbolos_de_depuraci_n</td></row>
@@ -1908,18 +1920,20 @@
 		<row><td>blobsdetection.archivos_de_c</td><td>BlobsDetection.Archivos_de_c_digo_fuente</td><td>BlobsDetection.Archivos de código fuente</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;BlobsDetection&gt;|SourceFiles</td><td>3</td><td/></row>
 		<row><td>blobsdetection.resultado_pri</td><td>BlobsDetection.Resultado_principal</td><td>BlobsDetection.Resultado principal</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;BlobsDetection&gt;|Built</td><td>3</td><td/></row>
 		<row><td>blobsdetection.s_mbolos_de_d</td><td>BlobsDetection.S_mbolos_de_depuraci_n</td><td>BlobsDetection.Símbolos de depuración</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;BlobsDetection&gt;|Symbols</td><td>3</td><td/></row>
-		<row><td>db.ini</td><td>ISX_DEFAULTCOMPONENT</td><td>db.ini</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Proyecto ORCO\app\db.ini</td><td>1</td><td/></row>
+		<row><td>db.ini2</td><td>ISX_DEFAULTCOMPONENT2</td><td>db.ini</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Proyecto ORCO\orpocopo\app\db.ini</td><td>1</td><td/></row>
 		<row><td>libmysql.dll</td><td>libmysql.dll</td><td>libmysql.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Program Files (x86)\MySQL\mysql-5.6.25-win32\lib\libmysql.dll</td><td>1</td><td/></row>
-		<row><td>opencv_core246.dll</td><td>opencv_core246.dll</td><td>OPENCV~1.DLL|opencv_core246.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Proyecto ORCO\app\release\opencv_core246.dll</td><td>1</td><td/></row>
-		<row><td>opencv_ffmpeg246.dll</td><td>opencv_ffmpeg246.dll</td><td>OPENCV~1.DLL|opencv_ffmpeg246.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Proyecto ORCO\app\release\opencv_ffmpeg246.dll</td><td>1</td><td/></row>
-		<row><td>opencv_highgui246.dll</td><td>opencv_highgui246.dll</td><td>OPENCV~1.DLL|opencv_highgui246.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Proyecto ORCO\app\release\opencv_highgui246.dll</td><td>1</td><td/></row>
-		<row><td>opencv_imgproc246.dll</td><td>opencv_imgproc246.dll</td><td>OPENCV~1.DLL|opencv_imgproc246.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Proyecto ORCO\app\release\opencv_imgproc246.dll</td><td>1</td><td/></row>
-		<row><td>opencv_video246.dll</td><td>opencv_video246.dll</td><td>OPENCV~1.DLL|opencv_video246.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Proyecto ORCO\app\release\opencv_video246.dll</td><td>1</td><td/></row>
-		<row><td>opencv_videostab246.dll</td><td>opencv_videostab246.dll</td><td>OPENCV~1.DLL|opencv_videostab246.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Proyecto ORCO\app\release\opencv_videostab246.dll</td><td>1</td><td/></row>
+		<row><td>opencv_core246.dll</td><td>opencv_core246.dll</td><td>OPENCV~1.DLL|opencv_core246.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Proyecto ORCO\orpocopo\app\release\opencv_core246.dll</td><td>1</td><td/></row>
+		<row><td>opencv_ffmpeg246.dll</td><td>opencv_ffmpeg246.dll</td><td>OPENCV~1.DLL|opencv_ffmpeg246.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Proyecto ORCO\orpocopo\app\release\opencv_ffmpeg246.dll</td><td>1</td><td/></row>
+		<row><td>opencv_highgui246.dll</td><td>opencv_highgui246.dll</td><td>OPENCV~1.DLL|opencv_highgui246.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Proyecto ORCO\orpocopo\app\release\opencv_highgui246.dll</td><td>1</td><td/></row>
+		<row><td>opencv_imgproc246.dll</td><td>opencv_imgproc246.dll</td><td>OPENCV~1.DLL|opencv_imgproc246.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Proyecto ORCO\orpocopo\app\release\opencv_imgproc246.dll</td><td>1</td><td/></row>
+		<row><td>opencv_video246.dll</td><td>opencv_video246.dll</td><td>OPENCV~1.DLL|opencv_video246.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Proyecto ORCO\orpocopo\app\release\opencv_video246.dll</td><td>1</td><td/></row>
+		<row><td>opencv_videostab246.dll</td><td>opencv_videostab246.dll</td><td>OPENCV~1.DLL|opencv_videostab246.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Proyecto ORCO\orpocopo\app\release\opencv_videostab246.dll</td><td>1</td><td/></row>
 		<row><td>orco_configuration.archivos_1</td><td>Orco_Configuration.Archivos_de_c_digo_fuente</td><td>Orco_Configuration.Archivos de código fuente</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;Orco_Configuration&gt;|SourceFiles</td><td>3</td><td/></row>
 		<row><td>orco_configuration.resultado</td><td>Orco_Configuration.Resultado_principal</td><td>Orco_Configuration.Resultado principal</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;Orco_Configuration&gt;|Built</td><td>3</td><td/></row>
 		<row><td>orco_configuration.s_mbolos_</td><td>Orco_Configuration.S_mbolos_de_depuraci_n</td><td>Orco_Configuration.Símbolos de depuración</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;Orco_Configuration&gt;|Symbols</td><td>3</td><td/></row>
-		<row><td>settings.ini</td><td>ISX_DEFAULTCOMPONENT</td><td>Settings.ini</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Proyecto ORCO\app\Settings.ini</td><td>1</td><td/></row>
+		<row><td>settings.ini2</td><td>ISX_DEFAULTCOMPONENT2</td><td>Settings.ini</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Proyecto ORCO\orpocopo\app\Settings.ini</td><td>1</td><td/></row>
+		<row><td>start_orco.bat</td><td>ISX_DEFAULTCOMPONENT2</td><td>START-~1.BAT|start-orco.bat</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Proyecto ORCO\orpocopo\app\start-orco.bat</td><td>1</td><td/></row>
+		<row><td>start_picture.bat</td><td>ISX_DEFAULTCOMPONENT2</td><td>START-~1.BAT|start-picture.bat</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Proyecto ORCO\orpocopo\app\start-picture.bat</td><td>1</td><td/></row>
 	</table>
 
 	<table name="FileSFPCatalog">
@@ -2067,16 +2081,19 @@
 		<row><td>BlobsDetection.Resultado_principal</td><td/><td/><td>_FF99EE03_0915_4F94_B82C_6652ABFB4751_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>BlobsDetection.S_mbolos_de_depuraci_n</td><td/><td/><td>_E53E7486_1CC9_451A_8EF7_CDFCE8C031E4_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_D133FFE9_0882_41DC_9349_94C9DE047BDF_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT1</td><td/><td/><td>_4CDE4BE1_A3D8_48BB_838A_DFDEBA4921F6_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT2</td><td/><td/><td>_4A1915ED_A54B_482A_A227_DB608A7FDD3B_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT3</td><td/><td/><td>_F0C7D074_03AB_488E_8BD1_262C953DBEB4_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>Orco_Configuration.Archivos_de_c_digo_fuente</td><td/><td/><td>_D36A99B0_EF70_42E1_9631_7B666805F14A_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>Orco_Configuration.Resultado_principal</td><td/><td/><td>_A498D3E7_6A12_417E_AAF6_A24E750B535B_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>Orco_Configuration.S_mbolos_de_depuraci_n</td><td/><td/><td>_B653EDCC_AB14_457B_BA65_0639B59732D7_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>libmysql.dll</td><td/><td/><td>_8600BB9E_B376_42BA_8FBE_314EA6DDDC82_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>opencv_core246.dll</td><td/><td/><td>_69F47669_3A3A_4A86_AC12_A90D29343115_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>opencv_ffmpeg246.dll</td><td/><td/><td>_655A4E33_188F_438D_B79C_894BF7BEC217_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>opencv_highgui246.dll</td><td/><td/><td>_1C6D0D8D_49E8_47E3_8612_AF966AE4A315_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>opencv_imgproc246.dll</td><td/><td/><td>_BABE304A_0604_4387_A796_7FA7D93D1C28_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>opencv_video246.dll</td><td/><td/><td>_148E1A06_74F3_4111_A734_8541859410D0_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>opencv_videostab246.dll</td><td/><td/><td>_F9C1A7FB_B47B_4339_BFBF_3E8660C4458B_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>opencv_core246.dll</td><td/><td/><td>_15F1623D_6138_4A85_A844_AF8A721361D2_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>opencv_ffmpeg246.dll</td><td/><td/><td>_93A61C49_9B89_4F6E_B76A_DDEA780663F9_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>opencv_highgui246.dll</td><td/><td/><td>_62325704_F7E4_4F09_956F_7854A2082992_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>opencv_imgproc246.dll</td><td/><td/><td>_724E7282_6A99_4C89_87BD_E961ED68325B_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>opencv_video246.dll</td><td/><td/><td>_8BB24E51_9BDD_48FA_80D7_7709A5823350_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>opencv_videostab246.dll</td><td/><td/><td>_41A33405_E667_4ABE_BCB8_1A85B08A7521_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -3804,6 +3821,14 @@
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1034</td><td>La cantidad de RAM no es la adecuada para ejecutar [ProductName].</td><td>0</td><td/><td>-475844383</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1034</td><td>La resolución de pantalla no es la adecuada para ejecutar [ProductName].</td><td>0</td><td/><td>-475844383</td></row>
 		<row><td>ID_STRING1</td><td>1034</td><td/><td>0</td><td/><td>-475844383</td></row>
+		<row><td>ID_STRING10</td><td>1033</td><td>NEWSHO~1|NewShortcut1</td><td>0</td><td/><td>-1004231103</td></row>
+		<row><td>ID_STRING10</td><td>1034</td><td>START-~1|start-orco</td><td>0</td><td/><td>-1004224959</td></row>
+		<row><td>ID_STRING11</td><td>1033</td><td>NEWSHO~1|NewShortcut2</td><td>0</td><td/><td>-1004267935</td></row>
+		<row><td>ID_STRING11</td><td>1034</td><td>START-~1|start-picture-gondola</td><td>0</td><td/><td>-1004257695</td></row>
+		<row><td>ID_STRING12</td><td>1033</td><td>NEWSHO~1|NewShortcut3</td><td>0</td><td/><td>-870025472</td></row>
+		<row><td>ID_STRING12</td><td>1034</td><td>ORCO_C~1|Orco_configuration</td><td>0</td><td/><td>-870015232</td></row>
+		<row><td>ID_STRING13</td><td>1033</td><td>NEWSHO~1|NewShortcut4</td><td>0</td><td/><td>-869997280</td></row>
+		<row><td>ID_STRING13</td><td>1034</td><td>DESINS~1|desinstalar Orco</td><td>0</td><td/><td>-870046400</td></row>
 		<row><td>ID_STRING2</td><td>1034</td><td>http://www.Criterya.com/orco/</td><td>0</td><td/><td>-475852543</td></row>
 		<row><td>ID_STRING3</td><td>1034</td><td>Criterya</td><td>0</td><td/><td>-475844383</td></row>
 		<row><td>ID_STRING4</td><td>1034</td><td>Orco</td><td>0</td><td/><td>-475844383</td></row>
@@ -3811,6 +3836,12 @@
 		<row><td>ID_STRING5</td><td>1034</td><td>*+-ORCO_HOME</td><td>0</td><td/><td>-475838450</td></row>
 		<row><td>ID_STRING6</td><td>1033</td><td>[INSTALLDIR]</td><td>0</td><td/><td>-475844594</td></row>
 		<row><td>ID_STRING6</td><td>1034</td><td>[INSTALLDIR]</td><td>0</td><td/><td>-475844594</td></row>
+		<row><td>ID_STRING7</td><td>1033</td><td>*+-NewEnvironment2</td><td>0</td><td/><td>-1004242207</td></row>
+		<row><td>ID_STRING7</td><td>1034</td><td>*+-ORCO_CONF</td><td>0</td><td/><td>-1004242207</td></row>
+		<row><td>ID_STRING8</td><td>1033</td><td>[DesktopFolder]orco\</td><td>0</td><td/><td>-1004248351</td></row>
+		<row><td>ID_STRING8</td><td>1034</td><td>[PersonalFolder]Orco\</td><td>0</td><td/><td>-1004239679</td></row>
+		<row><td>ID_STRING9</td><td>1033</td><td>NEWFOL~1|newfolder1</td><td>0</td><td/><td>-1004259775</td></row>
+		<row><td>ID_STRING9</td><td>1034</td><td>Orco</td><td>0</td><td/><td>-1004255679</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1034</td><td>Este componente no se instalará.</td><td>0</td><td/><td>-475844383</td></row>
 	</table>
 
@@ -3918,7 +3949,11 @@
 		<col def="V0">Data</col>
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I2">ISIconIndex</col>
-		<row><td>ARPPRODUCTICON.exe</td><td/><td>C:\Proyecto ORCO\app\logo.ico</td><td>0</td></row>
+		<row><td>ARPPRODUCTICON.exe</td><td/><td>D:\Proyecto ORCO\orpocopo\app\logo.ico</td><td>0</td></row>
+		<row><td>NewShortcut1_08934BC90BA449EBAA99A70099B8148B.exe</td><td/><td>D:\Proyecto ORCO\orpocopo\app\logo.ico</td><td>0</td></row>
+		<row><td>NewShortcut2_764C5484ED00450199E0AE5E2B1851F7.exe</td><td/><td>D:\Proyecto ORCO\orpocopo\app\camera.ico</td><td>0</td></row>
+		<row><td>NewShortcut3_696110CC6145428A9E5D351D59522F42.exe</td><td/><td>D:\Proyecto ORCO\orpocopo\app\advancedsettings.ico</td><td>0</td></row>
+		<row><td>NewShortcut4_0E744C2331454AEBAAA11C7ABD611F99.exe</td><td/><td>C:\Program Files (x86)\InstallShield\2013LE\Redist\Language Independent\OS Independent\uninstall.ico</td><td>0</td></row>
 	</table>
 
 	<table name="IniFile">
@@ -4051,7 +4086,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{0A76C990-1395-499B-A0E3-F272404EF6C2}</td></row>
 		<row><td>ISUSSignature</td><td>{4F1CF40F-21E5-4B6E-9CB2-A0E3E8E44C0D}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant,viewISToday,viewObjects,viewDependencies,viewAppFiles,viewFeatureFiles,viewSupportFiles,viewRelease,viewProject,viewUpgradePaths,viewEnvironmentVariables,viewSystemSearch</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewISToday,viewObjects,viewDependencies,viewAppFiles,viewFeatureFiles,viewSupportFiles,viewRelease,viewProject,viewUpgradePaths,viewEnvironmentVariables,viewSystemSearch,viewRealSetupDesign,viewShortcuts,viewRegistry,viewIniFiles,viewCustomActions</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>
@@ -4511,6 +4546,10 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="L255">FileName</col>
 		<col def="s72">DirProperty</col>
 		<col def="i2">InstallMode</col>
+		<row><td>NewShortcut1</td><td>ISX_DEFAULTCOMPONENT2</td><td/><td>newfolder1</td><td>2</td></row>
+		<row><td>NewShortcut2</td><td>ISX_DEFAULTCOMPONENT2</td><td/><td>newfolder1</td><td>2</td></row>
+		<row><td>NewShortcut3</td><td>Orco_Configuration.Resultado_principal</td><td/><td>newfolder1</td><td>2</td></row>
+		<row><td>NewShortcut4</td><td>ISX_DEFAULTCOMPONENT</td><td/><td>newfolder1</td><td>2</td></row>
 	</table>
 
 	<table name="RemoveIniFile">
@@ -4596,6 +4635,10 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">ISComments</col>
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
+		<row><td>NewShortcut1</td><td>newfolder1</td><td>##ID_STRING10##</td><td>ISX_DEFAULTCOMPONENT2</td><td>[PersonalFolder]Orco\start-orco.bat</td><td/><td/><td/><td>NewShortcut1_08934BC90BA449EBAA99A70099B8148B.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>NewShortcut2</td><td>newfolder1</td><td>##ID_STRING11##</td><td>ISX_DEFAULTCOMPONENT2</td><td>[PersonalFolder]Orco\start-picture.bat</td><td/><td/><td/><td>NewShortcut2_764C5484ED00450199E0AE5E2B1851F7.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>NewShortcut3</td><td>newfolder1</td><td>##ID_STRING12##</td><td>Orco_Configuration.Resultado_principal</td><td>AlwaysInstall</td><td/><td/><td/><td>NewShortcut3_696110CC6145428A9E5D351D59522F42.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>NewShortcut4</td><td>newfolder1</td><td>##ID_STRING13##</td><td>ISX_DEFAULTCOMPONENT</td><td>[SystemFolder]MsiExec.exe</td><td>/x [ProductCode]</td><td/><td/><td>NewShortcut4_0E744C2331454AEBAAA11C7ABD611F99.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="Signature">

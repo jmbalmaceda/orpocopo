@@ -1,0 +1,1 @@
+"%ORCO_HOME%BlobsDetection.exe" -C"%ORCO_CONF%Settings.ini" -D"%ORCO_CONF%db.ini"

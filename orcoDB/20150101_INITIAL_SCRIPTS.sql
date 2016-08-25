@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `log` (
   `idlog` int(11) NOT NULL,
   `fecha` datetime NOT NULL,
   `texto` varchar(45) DEFAULT NULL,
-  `pickup_id` int(11) NOT NULL,
+  `last_pickup_id` int(11) NOT NULL,
   `video_rgb` varchar(200) DEFAULT NULL,
   `video_depth` varchar(200) DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;

@@ -594,6 +594,7 @@ extern "C"{
 		string path = RoI_Information::video_directory_path;
 		char newFileName[100];
 		string pathVideoAux = definirNuevoArchivoDeVideo(path,"VideoRGB",".avi");
+		RoI_Information::video_rgb_path = pathVideoAux;
 		cout << "Video RGB se va a guardar en "<<pathVideoAux<<"\n\r";
 		strcpy(newFileName, pathVideoAux.c_str());
 		gbWriterRGB = cvCreateVideoWriter(newFileName, xvidCoded, 20, cvSize((int)w,(int)h), 1);
@@ -606,6 +607,7 @@ extern "C"{
 	__declspec(dllexport) extern void stopStoringRGBVideo()
 	{
 		storeRGBVideo = false;
+		cvReleaseVideoWriter(&gbWriterRGB);
 	}
 	
 
@@ -615,6 +617,7 @@ extern "C"{
 		string path = RoI_Information::video_directory_path;
 		char* newFileName = new char[100];
 		string pathVideoAux = definirNuevoArchivoDeVideo(path,"VideoDEPTH",".avi");
+		RoI_Information::video_depth_path = pathVideoAux;
 		cout << "Video DEPTH se va a guardar en "<<pathVideoAux<<"\n\r";
 		strcpy(newFileName, pathVideoAux.c_str());
 		gbWriterDepth = cvCreateVideoWriter(newFileName, xvidCoded, 20, cvSize((int)w,(int)h), 1);
@@ -627,6 +630,7 @@ extern "C"{
 	__declspec(dllexport) extern void stopStoringDepthVideo()
 	{
 		storeDepthVideo = false;
+		cvReleaseVideoWriter(&gbWriterDepth);
 	}
 
 	// Actualiza el procesamiento
@@ -915,16 +919,26 @@ void ejecutar(tm* finish){
 		startStoringRGBVideo(640,480);
 	}
 
+	//Loggear inicio de actividad
+	myDBConnection->insertLog("Iniciando actividad");
+
 	int cantPU = 0;
 	time_t now = time(0);
 	struct tm* now_time  = localtime(&now);
 	while (!eof() && (RoI_Information::ignoreTimes || compareTime(finish, now_time)>0))
 	{
-		processCapture();
-		cvWaitKey(RoI_Information::sleepTime);
-		cantPU = globalSD->allPickUps.size();
-		now = time(0);
-		now_time  = localtime(&now);
+		try{
+			processCapture();
+			cvWaitKey(RoI_Information::sleepTime);
+			cantPU = globalSD->allPickUps.size();
+			now = time(0);
+			now_time  = localtime(&now);
+		}catch(std::runtime_error& e){
+			myDBConnection->insertLog(e.what());
+		}
+		catch(...){
+			myDBConnection->insertLog("Excepción no catcheada");
+		}
 	} 
 
 	//detiene la grabacion solo si rec_video es true
@@ -948,12 +962,12 @@ void esperarInicio(){
 		
 		struct tm* finish = NULL;
 		if (!RoI_Information::ignoreTimes)
-			myDBConnection->startProcessing(now);
+			finish = myDBConnection->startProcessing(now);
 
 		if (RoI_Information::ignoreTimes || finish != NULL){
 			if (finish != NULL)	
 				cout << "comienza el análisis hasta las "<<finish->tm_hour<<":"<<finish->tm_min<<" horas\n";
-			//ejecutar(finish);
+			
 			ejecutar(finish);
 			cout << "Esperando hasta que comience la próxima hora de análisis\n";
 		}else{

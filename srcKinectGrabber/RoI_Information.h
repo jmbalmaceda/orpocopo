@@ -21,6 +21,8 @@ public:
 	static bool save_video_rgb;
 	static bool save_video_depth;
 	static string video_directory_path;
+	static string video_rgb_path;
+	static string video_depth_path;
 	/// Leer desde kinect (true) o desde video (false)
 	static bool readFromKinect;
 	static string rgb_video_in;
