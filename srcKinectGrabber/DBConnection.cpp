@@ -80,7 +80,10 @@ string DBConnection::getLastPickupId(){
 
 	string salida = string();
 	while ((row = mysql_fetch_row(res)) != NULL){
-		salida = string(row[0]);
+		if (row[0])
+			salida = string(row[0]);
+		else
+			salida = "0";
 	}
 	mysql_free_result(res);
 	return salida;

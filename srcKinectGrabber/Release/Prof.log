@@ -1,4 +1,4 @@
-﻿Compilación iniciada a las 25/8/2016 12:48:08 a. m..
+﻿Compilación iniciada a las 27/8/2016 9:04:01 p. m..
      1>Proyecto "D:\Proyecto ORCO\orpocopo\srcKinectGrabber\Prof.vcxproj" en el nodo 3 (Rebuild destinos).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(346,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
      1>ClCompile:
@@ -52,4 +52,4 @@
 
 Compilación correcta.
 
-Tiempo transcurrido 00:00:18.33
+Tiempo transcurrido 00:00:17.70

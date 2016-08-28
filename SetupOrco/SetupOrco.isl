@@ -225,11 +225,6 @@
 	<table name="AppSearch">
 		<col key="yes" def="s72">Property</col>
 		<col key="yes" def="s72">Signature_</col>
-		<row><td>DOTNETVERSION35</td><td>DotNet35</td></row>
-		<row><td>DOTNETVERSION35SP1</td><td>DotNet35SP1</td></row>
-		<row><td>DOTNETVERSION40CLIENT</td><td>DotNet40Client</td></row>
-		<row><td>DOTNETVERSION40FULL</td><td>DotNet40Full</td></row>
-		<row><td>DOTNETVERSION45FULL</td><td>DotNet45Full</td></row>
 	</table>
 
 	<table name="BBControl">
@@ -1921,6 +1916,7 @@
 		<row><td>blobsdetection.resultado_pri</td><td>BlobsDetection.Resultado_principal</td><td>BlobsDetection.Resultado principal</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;BlobsDetection&gt;|Built</td><td>3</td><td/></row>
 		<row><td>blobsdetection.s_mbolos_de_d</td><td>BlobsDetection.S_mbolos_de_depuraci_n</td><td>BlobsDetection.Símbolos de depuración</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;BlobsDetection&gt;|Symbols</td><td>3</td><td/></row>
 		<row><td>db.ini2</td><td>ISX_DEFAULTCOMPONENT2</td><td>db.ini</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Proyecto ORCO\orpocopo\app\db.ini</td><td>1</td><td/></row>
+		<row><td>gondola_top.jpg</td><td>ISX_DEFAULTCOMPONENT2</td><td>GONDOL~1.JPG|gondola-top.jpg</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Proyecto ORCO\orpocopo\app\gondola-top.jpg</td><td>1</td><td/></row>
 		<row><td>libmysql.dll</td><td>libmysql.dll</td><td>libmysql.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Program Files (x86)\MySQL\mysql-5.6.25-win32\lib\libmysql.dll</td><td>1</td><td/></row>
 		<row><td>opencv_core246.dll</td><td>opencv_core246.dll</td><td>OPENCV~1.DLL|opencv_core246.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Proyecto ORCO\orpocopo\app\release\opencv_core246.dll</td><td>1</td><td/></row>
 		<row><td>opencv_ffmpeg246.dll</td><td>opencv_ffmpeg246.dll</td><td>OPENCV~1.DLL|opencv_ffmpeg246.dll</td><td>0</td><td/><td/><td/><td>1</td><td>D:\Proyecto ORCO\orpocopo\app\release\opencv_ffmpeg246.dll</td><td>1</td><td/></row>
@@ -2718,11 +2714,6 @@
 		<row><td>COMPANY_NAME</td><td>1034</td><td>Criterya</td><td>0</td><td/><td>-475819807</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1034</td><td>Instalar siempre</td><td>0</td><td/><td>-475844383</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1034</td><td>La configuración de colores de su sistema no es adecuada para ejecutar [ProductName].</td><td>0</td><td/><td>-475844383</td></row>
-		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION35</td><td>1034</td><td>Microsoft .NET Framework 3.5 needs to be installed for this installation to continue.</td><td>0</td><td/><td>-475844383</td></row>
-		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION35SP1</td><td>1034</td><td>Microsoft .NET Framework 3.5 SP1 needs to be installed for this installation to continue.</td><td>0</td><td/><td>-475844383</td></row>
-		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION40CLIENT</td><td>1034</td><td>Microsoft .NET Framework 4.0 Client Package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>-475844383</td></row>
-		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION40FULL</td><td>1034</td><td>Microsoft .NET Framework 4.0 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>-475844383</td></row>
-		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION45FULL</td><td>1034</td><td>Microsoft .NET Framework 4.5 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>-475844383</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_OS</td><td>1034</td><td>El sistema operativo no es adecuado para ejecutar [ProductName].</td><td>0</td><td/><td>-475844383</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_PROCESSOR</td><td>1034</td><td>El procesador no es adecuado para ejecutar [ProductName].</td><td>0</td><td/><td>-475844383</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_RAM</td><td>1034</td><td>La cantidad de RAM no es adecuada para ejecutar [ProductName].</td><td>0</td><td/><td>-475844383</td></row>
@@ -4144,11 +4135,6 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 	<table name="LaunchCondition">
 		<col key="yes" def="s255">Condition</col>
 		<col def="l255">Description</col>
-		<row><td>DOTNETVERSION35&lt;&gt;""</td><td>##IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION35##</td></row>
-		<row><td>DOTNETVERSION35SP1&gt;="#1"</td><td>##IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION35SP1##</td></row>
-		<row><td>DOTNETVERSION40CLIENT&gt;="#1"</td><td>##IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION40CLIENT##</td></row>
-		<row><td>DOTNETVERSION40FULL&gt;="#1"</td><td>##IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION40FULL##</td></row>
-		<row><td>DOTNETVERSION45FULL&gt;="#1"</td><td>##IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION45FULL##</td></row>
 	</table>
 
 	<table name="ListBox">
@@ -4478,7 +4464,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>SERIALNUMBER</td><td/><td/></row>
 		<row><td>SERIALNUMVALSUCCESSRETVAL</td><td>1</td><td/></row>
 		<row><td>SHOWLAUNCHPROGRAM</td><td>-1</td><td/></row>
-		<row><td>SecureCustomProperties</td><td>ISFOUNDNEWERPRODUCTVERSION;USERNAME;COMPANYNAME;ISX_SERIALNUM;SUPPORTDIR;DOTNETVERSION35;DOTNETVERSION35SP1;DOTNETVERSION40CLIENT;DOTNETVERSION40FULL;DOTNETVERSION45FULL</td><td/></row>
+		<row><td>SecureCustomProperties</td><td>ISFOUNDNEWERPRODUCTVERSION;USERNAME;COMPANYNAME;ISX_SERIALNUM;SUPPORTDIR</td><td/></row>
 		<row><td>SelectedSetupType</td><td>##IDS__DisplayName_Typical##</td><td/></row>
 		<row><td>SetupType</td><td>Typical</td><td/></row>
 		<row><td>UpgradeCode</td><td>{0C0E83E0-D1CE-45A9-AE10-F2ECFBABEFAD}</td><td/></row>
@@ -4523,11 +4509,6 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="s255">Key</col>
 		<col def="S255">Name</col>
 		<col def="I2">Type</col>
-		<row><td>DotNet35</td><td>2</td><td>SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5</td><td>Version</td><td>2</td></row>
-		<row><td>DotNet35SP1</td><td>2</td><td>SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5</td><td>SP</td><td>2</td></row>
-		<row><td>DotNet40Client</td><td>2</td><td>SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client</td><td>Install</td><td>2</td></row>
-		<row><td>DotNet40Full</td><td>2</td><td>SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full</td><td>Install</td><td>2</td></row>
-		<row><td>DotNet45Full</td><td>2</td><td>SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full</td><td>Version</td><td>2</td></row>
 	</table>
 
 	<table name="Registry">

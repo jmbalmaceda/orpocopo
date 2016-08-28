@@ -19,9 +19,9 @@ C:\Proyecto ORCO\orpocopo\Orco_Configuration\obj\x86\Release\Orco_Configuration.
 D:\Proyecto ORCO\orpocopo\Orco_Configuration\bin\x86\Release\Orco_Configuration.exe.config
 D:\Proyecto ORCO\orpocopo\Orco_Configuration\bin\x86\Release\Orco_Configuration.exe
 D:\Proyecto ORCO\orpocopo\Orco_Configuration\bin\x86\Release\Orco_Configuration.pdb
-D:\Proyecto ORCO\orpocopo\Orco_Configuration\obj\x86\Release\Orco_Configuration.csprojResolveAssemblyReference.cache
 D:\Proyecto ORCO\orpocopo\Orco_Configuration\obj\x86\Release\Orco_Configuration.Form1.resources
 D:\Proyecto ORCO\orpocopo\Orco_Configuration\obj\x86\Release\Orco_Configuration.Properties.Resources.resources
 D:\Proyecto ORCO\orpocopo\Orco_Configuration\obj\x86\Release\Orco_Configuration.csproj.GenerateResource.Cache
 D:\Proyecto ORCO\orpocopo\Orco_Configuration\obj\x86\Release\Orco_Configuration.exe
 D:\Proyecto ORCO\orpocopo\Orco_Configuration\obj\x86\Release\Orco_Configuration.pdb
+D:\Proyecto ORCO\orpocopo\Orco_Configuration\obj\x86\Release\Orco_Configuration.csprojResolveAssemblyReference.cache

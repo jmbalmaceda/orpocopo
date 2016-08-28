@@ -919,9 +919,7 @@ void ejecutar(tm* finish){
 		startStoringRGBVideo(640,480);
 	}
 
-	//Loggear inicio de actividad
 	myDBConnection->insertLog("Iniciando actividad");
-
 	int cantPU = 0;
 	time_t now = time(0);
 	struct tm* now_time  = localtime(&now);
@@ -981,12 +979,17 @@ void esperarInicio(){
 int main(int argc, char* argv[]) 
 {
 	procesarArgumentos(argc, argv);
-
-	if (saveImageToFile){
-		saveImage(imagePathToSave);
-		exit(0);
-	}else{
-		esperarInicio();
+	try{
+		if (saveImageToFile){
+			saveImage(imagePathToSave);
+			exit(0);
+		}else{
+			esperarInicio();
+		}
+	}catch(std::runtime_error& e){
+		cout << e.what();
+	}catch(...){
+		cout << "Error global..";
 	}
 
 	return -1;
